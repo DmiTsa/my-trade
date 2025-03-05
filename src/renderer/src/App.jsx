@@ -4,12 +4,12 @@ function App() {
   // const ipcHandle = () => window.electron.ipcRenderer.send('ping')
 
   return (
-    <div className="container mx-50 flex">
+    <div className="container flex mx-auto">
       <aside
         id="aside"
-        className="w-30 h-screen py-5 bg-blue-700 text-white flex flex-col gap-10 items-center"
+        className="w-40 h-screen py-5 bg-blue-700 text-white flex flex-col gap-10 items-center"
       >
-        <div id="user">
+        <div id="user" className="asideItem text-center underline">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -24,6 +24,7 @@ function App() {
               d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
             />
           </svg>
+          <p>Иванов И.И.</p>
         </div>
 
         <ul>
@@ -102,8 +103,32 @@ function App() {
       </aside>
 
       {/* пока сделаю тут окно процедуры */}
-      <div id="mainContainer" className="bg-blue-200 w-screen">
-        <span>основной контейнер</span>
+      <div id="mainContainer" className="flex flex-1 flex-col">
+        {/* <div id="trade" className="border-2 border-blue-700 rounded-2xl p-4"> */}
+        <div id="trade" className="flex flex-col">
+          <div id="tradeInfo" className="flex flex-1 flex-col bg-blue-500 p-4">
+            <h2 className="text-lg font-bold">
+              Торги № ВФ/СМР/Связь/23/2025 (Переговоры со снижением)
+            </h2>
+            <h3>
+              Подача предложений: 02.03.2025 - 10.03.2025, вскрытие конвертов с предложениями:
+              10.03.2025, процедура снижения: 12.03.2025
+            </h3>
+          </div>
+
+          <div id="stageInfo" className="py-4 px-8">
+            <ul className="flex gap-1">
+              <li className="border-0 rounded-2xl px-4 py-3 bg-blue-400">Подготовка</li>
+              <li className="border-0 rounded-2xl px-4 py-3 bg-yellow-300 border-2 border-green-800 text-green-800 font-bold">
+                Прием предложений
+              </li>
+              <li className="border-0 rounded-2xl px-4 py-3 bg-yellow-300">Допуск</li>
+              <li className="border-0 rounded-2xl px-4 py-3  bg-green-400">Снижение</li>
+              <li className="border-0 rounded-2xl px-4 py-3  bg-green-400">Закрытие(договор)</li>
+              <li className="border-0 rounded-2xl px-4 py-3 bg-gray-400">Оформление</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   )
