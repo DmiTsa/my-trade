@@ -9,5 +9,5 @@
 }
 
 .activeStageInfo {
-    @apply border-2 border-green-800 text-green-800 font-bold underline text-xl
+    @apply border-2 border-green-800 text-green-800 font-bold text-xl
 }
