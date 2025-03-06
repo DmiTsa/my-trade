@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.stageInfoItem {
+    @apply border-0 rounded-md px-4 py-2 text-lg mx-0.5
+}
+
+.uncomplete {
+    @apply bg-gray-500
+}
+
+.activeStageInfo {
+    @apply border-2 border-green-800 text-green-800 font-bold underline text-xl
+}

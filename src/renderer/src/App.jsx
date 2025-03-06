@@ -1,4 +1,4 @@
-// import Versions from './components/Versions'
+import Trade from './components/Trade/Trade'
 
 function App() {
   // const ipcHandle = () => window.electron.ipcRenderer.send('ping')
@@ -102,33 +102,8 @@ function App() {
         </ul>
       </aside>
 
-      {/* пока сделаю тут окно процедуры */}
-      <div id="mainContainer" className="flex flex-1 flex-col">
-        {/* <div id="trade" className="border-2 border-blue-700 rounded-2xl p-4"> */}
-        <div id="trade" className="flex flex-col">
-          <div id="tradeInfo" className="flex flex-1 flex-col bg-blue-500 p-4">
-            <h2 className="text-lg font-bold">
-              Торги № ВФ/СМР/Связь/23/2025 (Переговоры со снижением)
-            </h2>
-            <h3>
-              Подача предложений: 02.03.2025 - 10.03.2025, вскрытие конвертов с предложениями:
-              10.03.2025, процедура снижения: 12.03.2025
-            </h3>
-          </div>
-
-          <div id="stageInfo" className="py-4 px-8">
-            <ul className="flex gap-1">
-              <li className="border-0 rounded-2xl px-4 py-3 bg-blue-400">Подготовка</li>
-              <li className="border-0 rounded-2xl px-4 py-3 bg-yellow-300 border-2 border-green-800 text-green-800 font-bold">
-                Прием предложений
-              </li>
-              <li className="border-0 rounded-2xl px-4 py-3 bg-yellow-300">Допуск</li>
-              <li className="border-0 rounded-2xl px-4 py-3  bg-green-400">Снижение</li>
-              <li className="border-0 rounded-2xl px-4 py-3  bg-green-400">Закрытие(договор)</li>
-              <li className="border-0 rounded-2xl px-4 py-3 bg-gray-400">Оформление</li>
-            </ul>
-          </div>
-        </div>
+      <div id="mainContainer" className="bg-blue-700/20 flex flex-1 p-4">
+        <Trade />
       </div>
     </div>
   )
