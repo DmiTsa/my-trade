@@ -1,7 +1,4 @@
-// import {TrophyIcon}
-import { TrophyIcon } from '../../assets/icons/TrophyIcon'
-import { EditIcon } from '../../assets/icons/EditIcon'
-import { DeleteIcon } from '../../assets/icons/DeleteIcon'
+import { TrophyIcon, EditIcon, DeleteIcon } from '../../common/iconsLib'
 
 export function Lot({ lot }) {
   const { number, lotName, cost, startBuild, endBuild, buildTime, okrb } = lot
@@ -28,17 +25,17 @@ export function Lot({ lot }) {
       </ul> */}
       </div>
 
-      <div id="buttonsLot" className="absolute top-0 right-0 m-1 flex gap-1">
+      <div id="buttonsLot" className="absolute top-0 right-0 m-1 flex gap-2">
         <button>
-          <TrophyIcon size={5} />
+          <TrophyIcon size={16} />
         </button>
 
         <button>
-          <EditIcon size={5} />
+          <EditIcon size={16} />
         </button>
 
         <button>
-          <DeleteIcon size={5} />
+          <DeleteIcon size={16} />
         </button>
       </div>
     </div>

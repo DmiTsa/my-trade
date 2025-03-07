@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div className="container flex mx-auto">
-      <aside
+      <div
         id="aside"
         className="w-40 h-screen py-5 bg-blue-700 text-white flex flex-col gap-10 items-center"
       >
@@ -100,7 +100,7 @@ function App() {
             <p className="text-sm">Комиссия</p>
           </li>
         </ul>
-      </aside>
+      </div>
 
       <div id="mainContainer" className="bg-blue-700/20 flex flex-1 p-4">
         <Trade />
