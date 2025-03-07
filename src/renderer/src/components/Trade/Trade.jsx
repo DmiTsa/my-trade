@@ -2,7 +2,6 @@ import { Lot } from '../Lot/Lot'
 import { Stages } from '../Stages/Stages'
 import { SetIcon, EditIcon, DeleteIcon } from '../../common/iconsLib'
 import './Trade.css'
-// import React from 'react'
 
 function Trade() {
   const lot1 = {
@@ -27,7 +26,7 @@ function Trade() {
   }
 
   return (
-    <div id="trade" className="p-2">
+    <div className="bg-blue-700/20 flex flex-1 flex-col p-4">
       <div id="tradeInfo" className="flex items-center">
         <div id="info" className="flex flex-1 flex-col">
           <h2 className="h2 font-bold">

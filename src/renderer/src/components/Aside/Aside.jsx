@@ -1,4 +1,5 @@
 import {
+  AddIcon,
   CalendarIcon,
   ListIcon,
   WorkersIcon,
@@ -9,12 +10,17 @@ import {
 
 import './Aside.css'
 
-export function Aside() {
+function Aside() {
   const iconSize = 36
 
   return (
-    <>
+    <div className="w-40 h-screen py-5 bg-blue-700 text-white flex flex-col gap-10 items-center">
       <ul p-1>
+        <li id="calenderView" className="asideItem bg-teal-600 border-2 rounded-2xl p-2">
+          <AddIcon size={iconSize} />
+          <p className="asideItemDescr">Добавить</p>
+        </li>
+
         <li id="calenderView" className="asideItem">
           <CalendarIcon size={iconSize} />
           <p className="asideItemDescr">Календарь</p>
@@ -45,6 +51,8 @@ export function Aside() {
         <UserIcon size={iconSize} />
         <p className="asideItemDescr">Иванов И.И.</p>
       </div>
-    </>
+    </div>
   )
 }
+
+export default Aside
