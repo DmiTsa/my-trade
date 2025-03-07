@@ -5,10 +5,6 @@ body {
     background-color: rgba(52, 71, 241, 0.123);
 }
 
-.asideItem {
-    @apply flex flex-col items-center cursor-pointer my-6
-}
-
 .h2 {
     @apply text-2xl
 }
