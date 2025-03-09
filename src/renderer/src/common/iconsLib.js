@@ -13,6 +13,7 @@ import { SlBriefcase } from 'react-icons/sl'
 import { SlPlus } from 'react-icons/sl'
 import { SlCalender } from 'react-icons/sl'
 import { SlPeople } from 'react-icons/sl'
+import { SlPieChart } from 'react-icons/sl'
 
 export const SetIcon = SlSettings
 export const TrophyIcon = SlTrophy
@@ -28,3 +29,4 @@ export const CommittionIcon = SlBriefcase
 export const AddIcon = SlPlus
 export const CalendarIcon = SlCalender
 export const WorkersIcon = SlPeople
+export const IconReport = SlPieChart

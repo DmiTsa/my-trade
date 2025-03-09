@@ -1,30 +1,9 @@
-import { Lot } from '../Lot/Lot'
+import Lots from '../Lots/Lots'
 import { Stages } from '../Stages/Stages'
-import { SetIcon, EditIcon, DeleteIcon } from '../../common/iconsLib'
+import { SetIcon, EditIcon, DeleteIcon, AddIcon } from '../../common/iconsLib'
 import './Trade.css'
 
 function Trade() {
-  const lot1 = {
-    number: 1,
-    lotName:
-      'Реконструкция сети связи в поселки Нижние Пиздюки. Возведение строительных конструкция, прокладка сети ХПОН',
-    cost: 2993904.02,
-    startBuild: '12.03.2025',
-    endBuild: '30.12.2015',
-    buildTime: 12,
-    okrb: '42.22.22'
-  }
-
-  const lot2 = {
-    number: 2,
-    lotName: 'Реконструкция сети связи в Большом Городе. Строительство канализации и сетей>',
-    cost: 302003.02,
-    startBuild: '12.03.2025',
-    endBuild: '30.12.2015',
-    buildTime: 3,
-    okrb: '42.22.22'
-  }
-
   return (
     <div className="bg-blue-700/20 flex flex-1 flex-col p-4">
       <div id="tradeInfo" className="flex items-center">
@@ -64,12 +43,7 @@ function Trade() {
 
       <Stages />
 
-      <div id="lots">
-        <p className="h3 font-bold">Лоты для торгов:</p>
-
-        <Lot lot={lot1} />
-        <Lot lot={lot2} />
-      </div>
+      <Lots />
 
       <div id="offers">
         <p className="h3 font-bold">Предложения подрядчиков:</p>

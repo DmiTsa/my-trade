@@ -1,11 +1,11 @@
-import { TrophyIcon, EditIcon, DeleteIcon } from '../../common/iconsLib'
+import { TrophyIcon, EditIcon, DeleteIcon } from '../../../common/iconsLib'
 
-export function Lot({ lot }) {
+function Lot({ lot }) {
   const { number, lotName, cost, startBuild, endBuild, buildTime, okrb } = lot
   //   console.log(number, lotName, cost, startBuild, endBuild, buildTime, okrb)
 
   return (
-    <div className="flex border rounded p-1 m-1 relative">
+    <div className="flex border rounded p-1 my-1 relative">
       <p id="nameLot" className="mx-2 font-bold">
         {`Лот №${number}`}
       </p>
@@ -41,3 +41,5 @@ export function Lot({ lot }) {
     </div>
   )
 }
+
+export default Lot

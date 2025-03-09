@@ -5,7 +5,8 @@ import {
   WorkersIcon,
   CommittionIcon,
   SetIcon,
-  UserIcon
+  UserIcon,
+  IconReport
 } from '../../common/iconsLib'
 
 import './Aside.css'
@@ -39,6 +40,11 @@ function Aside() {
         <li id="committete" className="asideItem">
           <CommittionIcon size={iconSize} />
           <p className="asideItemDescr">Комиссия</p>
+        </li>
+
+        <li id="committete" className="asideItem">
+          <IconReport size={iconSize} />
+          <p className="asideItemDescr">Отчеты</p>
         </li>
 
         <li id="mainSet" className="asideItem">
