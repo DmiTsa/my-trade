@@ -16,3 +16,7 @@ body {
 .hoverTealColor {
     @apply hover:text-teal-600
 }
+
+.inputText {
+    @apply border-1 rounded-md border-transparent bg-blue-400 hover:border-blue-900 px-2 py-0.5 outline-0 focus:bg-blue-300 focus:border-blue-900 truncate text-ellipsis overflow-hidden whitespace-nowrap
+}

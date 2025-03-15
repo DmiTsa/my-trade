@@ -1,6 +1,7 @@
 import Lot from './Lot/Lot'
 import AddLot from './AddLot/AddLot'
 import { AddIcon } from '../../common/iconsLib'
+import { useState } from 'react'
 
 const lot1 = {
   number: 1,
@@ -24,6 +25,8 @@ const lot2 = {
 }
 
 function Lots() {
+  const [lots, setLots] = useState([lot1, lot2])
+
   return (
     <div>
       <p className="h3 font-bold flex items-center gap-2">
@@ -32,11 +35,11 @@ function Lots() {
           <AddIcon size={18} />
         </div>
       </p>
-
       <AddLot />
 
-      <Lot lot={lot1} />
-      <Lot lot={lot2} />
+      {lots.map((el) => (
+        <Lot lot={el} />
+      ))}
     </div>
   )
 }
