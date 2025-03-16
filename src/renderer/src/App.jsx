@@ -6,10 +6,12 @@ function App() {
   // const ipcHandle = () => window.electron.ipcRenderer.send('ping')
 
   return (
-    <div className="flex mx-auto">
-      <Aside />
-      <Trade />
-    </div>
+    <RestrictionWindowSize>
+      <div className="flex mx-auto">
+        <Aside />
+        <Trade />
+      </div>
+    </RestrictionWindowSize>
   )
 }
 

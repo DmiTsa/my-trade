@@ -24,16 +24,16 @@ function RestrictionWindowSize({ children }) {
     }
   }, [])
 
-  if (windowDimensions.width < MIN_WIDTH || windowDimensions.height < MIN_HEIGHT) {
-    return (
-      <div className="flex content-center justify-center p-5">
-        Минимальный размер окна для корректного отображения составляет {MIN_WIDTH} x {MIN_HEIGHT}!
-        Пожалуйста, увеличьте окно до минимальных размеров
-      </div>
-    )
+  if (windowDimensions.width >= MIN_WIDTH || windowDimensions.height >= MIN_HEIGHT) {
+    return <>{children}</>
   }
 
-  return <>{children}</>
+  return (
+    <div className="flex content-center justify-center p-5">
+      Минимальный размер окна для корректного отображения составляет {MIN_WIDTH} x {MIN_HEIGHT}!
+      Пожалуйста, увеличьте окно до минимальных размеров
+    </div>
+  )
 }
 
 export default RestrictionWindowSize
